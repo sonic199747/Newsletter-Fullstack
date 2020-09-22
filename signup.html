@@ -45,7 +45,6 @@
       sizes="16x16"
       type="image/png"
     />
-    <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json" />
     <link
       rel="mask-icon"
       href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg"
@@ -75,11 +74,11 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
 
   <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" action="/" method="post">
       <h1 class="h3 mb-3 font-weight-normal">
         <strong>Signup to My Newsletter</strong>
       </h1>
@@ -88,6 +87,7 @@
         type="text"
         class="form-control top"
         placeholder="First Name"
+        name="firstname"
         required
         autofocus
       />
@@ -96,6 +96,7 @@
         type="text"
         class="form-control middle"
         placeholder="Last Name"
+        name="lastname"
         required
       />
 
@@ -103,6 +104,7 @@
         type="email"
         class="form-control bottom"
         placeholder="Email"
+        name="email"
         required
       />
 
